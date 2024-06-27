@@ -1,0 +1,94 @@
+
+:root{
+    --color-light:#fff
+    --color-blue:#1400ff
+    --color-black:#000000
+    --radius: 10px;
+    --gradient: linear-gradient(to top, rgba(44, 17, 94, .7), rgba(44, 17, 94, .4))
+}
+/* Asterisco representa seletor universal, todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header{
+    font-size: 36px;
+    width: 100%;
+    background-color:rgb(224, 230, 230);
+    font-family:'Lilita', sans-serif;
+    color: rgb(57, 9, 124);
+}
+
+.hero-cabecalho{
+    display: flex;
+    gap: 15px;
+    justify-content:space-between;
+    align-items: center;
+    >a{
+    text-decoration: none;
+    font-size: 18px;  
+    }
+}
+
+.hero-usuariologin {
+    color:rgb(57, 9, 124);   
+    font-size: 20px;
+    background-color:rgb(250, 249, 249);
+    display:flex;
+    flex-direction: column;
+    box-shadow:5px 10px 10px;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+    justify-content: center;
+    font-family:'Lilita', sans-serif;
+   
+    >a{
+    font-size: 10px;  
+    }
+}
+
+.hero-usuarioconteiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* hero - FORMATAÇÃO GERAL */  
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: var(--gradient),url(../imagem/Familia\ Finanças.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+    width: 80px;
+    height: 80px;
+    border: radius 50%;
+
+}
+.hero-rodape{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(224, 230, 230);
+    font-family:'Lilita', sans-serif;
+    color: rgb(57, 9, 124);
+    
+    >p{
+    flex-direction: column;
+    }   
+    
+    >a{
+    font-size: 15px;   
+    color: rgb(57, 9, 124);
+    justify-content: space-between;
+    margin: 10px;
+    width: 100px;
+    height: 10px;}
+}
